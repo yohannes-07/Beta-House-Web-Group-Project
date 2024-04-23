@@ -70,6 +70,47 @@ Optional: Install  Nvidia if you want to run on GPU.
   pip install nvidia-cublas-cu11 nvidia-cudnn-cu11
  ```
 
+Setup OpenVoice
+
+```bash
+git clone https://github.com/myshell-ai/OpenVoice
+cd OpenVoice
+pip install -e .
+cd ..
+```
+Download and extract open voice checkpoints
+
+```bash
+cd open_voice
+wget https://myshell-public-repo-hosting.s3.amazonaws.com/openvoice/checkpoints_1226.zip
+unzip checkpoints_1226.zip
+cd ..
+```
+```bash
+pip install --upgrade huggingface_hub
+echo ICE setup done!
+```
+
+launch the server run
+```bash
+python3 run_fast.py
+```
+or
+```bash
+    uvicorn run_fast:app --host 0.0.0.0 --port 80
+```
+or 
+
+Step 1. Allow run_server.sh to be
+```bash
+    chmod +x run.sh
+```
+
+Step 2. Run run_server.sh
+  ```bash
+      ./run.sh
+  ```
+
 
  # Usage 
  
