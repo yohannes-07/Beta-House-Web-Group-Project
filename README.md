@@ -1,6 +1,6 @@
 # 🤖ICE SERVER🤖
 
-ICE SERVER  lets you upload files, search from file systems or databases with file content, summarize lengthy files(video, audio, doc).
+ICE SERVER lets you to upload files, summarize lengthy files (videos, audio recordings, documents, images), and search through file systems or databases based on file content.
 - Support for over 12 audio file types.
 - Support for over 11 video file types.
 - Support for over 17 document file types.
@@ -92,6 +92,7 @@ Step 2. Run run_server.sh
   ```bash
       ./run.sh
   ```
+
 
  # Usage 
  
